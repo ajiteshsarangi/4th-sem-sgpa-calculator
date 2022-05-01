@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIIT CGPA Calculator</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul class="navigation" id="navLinks">
+                <li><i class="uil uil-times times" onclick="hideMenu()"></i></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Recent</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hey"><a href="card.html">Say Hi</a></div>
+        <i class="uil uil-bars bars" onclick="showMenu()"></i>
+    </div>
+    <!-- -------------------------contact---------------------------- -->
+    <form>
+        <div class="content">
+            <div id="contact">
+                <div class="grid">
+                    <p>WT</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk1" name="fname" placeholder="Enter Marks out of 100" required />
+                        <span id="gd1">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>OS</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk2" placeholder="Enter Marks out of 100" required />
+                        <span id="gd2">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>PDC</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk3" placeholder="Enter Marks out of 100" required />
+                        <span id="gd3">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>COA</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk4" placeholder="Enter Marks out of 100" required />
+                        <span id="gd4">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>AFL</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk5" placeholder="Enter Marks out of 100" required />
+                        <span id="gd5">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>DBMS</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk6" placeholder="Enter Marks out of 100" required />
+                        <span id="gd6">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>WT Lab</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk7" placeholder="Enter Marks out of 100" required />
+                        <span id="gd7">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>OS Lab</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk8" placeholder="Enter Marks out of 100" required />
+                        <span id="gd8">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>DBMS Lab</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk9" placeholder="Enter Marks out of 100" required />
+                        <span id="gd9">Grade</span>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>B.Com</p>
+                    <div class="contactinput">
+                        <input type="number" id="mk10" placeholder="Enter Marks out of 100" required />
+                        <span id="gd10">Grade</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="right-div">
+                <div class="Cgpa">
+                    <h3>Your SGPA in this semester is </h3>
+                    <p id="showCgpa">0.00</p>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Calculate" class="calc btn btn-primary" id="btn">
+                    <button class="reset" id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--footer--------->
+    <footer>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Copyright 2022 - Lorem, ipsum.</p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-100%";
+        }
+    </script>
+</body>
+
+</html>
